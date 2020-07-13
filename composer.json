@@ -16,7 +16,7 @@
         "symfony/dotenv": "^3.4" ,
         "propel/propel": "^2.0@alpha",
         "nette/di": "^2.4",
-        "tracy/tracy": "^2.4
+        "tracy/tracy": "^2.4"
     },
     "autoload": {
         "psr-4": {
