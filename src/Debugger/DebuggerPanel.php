@@ -36,7 +36,7 @@ class DebuggerPanel implements IBarPanel
      * @param string $profile
      * @return string
      */
-    private function getTime(ConnectionInterface $connection, string $profile) : string
+    private function getTime(ConnectionInterface $connection, string $profile) 
     {
         $realTime = str_replace('Time:', '', explode('|', $profile)[0]);
 
