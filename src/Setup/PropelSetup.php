@@ -34,7 +34,7 @@ class PropelSetup
      * @param $content
      * @return string
      */
-    protected static function replaceEnvironmentVariables($content) : string
+    protected static function replaceEnvironmentVariables($content)
     {
         preg_match_all("/\:\:getenv\(\'(.*)\'\)/", $content, $result);
 
@@ -75,7 +75,7 @@ class PropelSetup
      * Připojí propel k DB a nastaví výchozí připojení.
      * @param Container $container
      */
-    public static function setup(Container $container) : void
+    public static function setup(Container $container)
     {
         $config = self::getAsArray();
         $configurationManager = new ConfigurationManager(NULL, $config);
