@@ -59,7 +59,7 @@ class PropelSetup
      * Vrací nastavení Propelu ze souboru db.local.neon
      * @return array
      */
-    public static function getAsArray() : array
+    public static function getAsArray() 
     {
         $configPath = realpath(self::NEON_CONFIG_PATH);
         $content = file_get_contents('nette.safe://' . $configPath);
