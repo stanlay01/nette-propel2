@@ -22,7 +22,7 @@ class DebuggerPanel implements IBarPanel
      * @param ConnectionInterface $connection
      * @return string
      */
-    private function getProfile(ConnectionInterface $connection) : string
+    private function getProfile(ConnectionInterface $connection) 
     {
         return str_replace('SLOW', '',  $connection->getProfiler()->getProfile());
     }
@@ -53,7 +53,7 @@ class DebuggerPanel implements IBarPanel
      * Tab
      * @return string
      */
-    function getTab() : string
+    function getTab() 
     {
         $connection = Propel::getConnection();
         $profile = $this->getProfile($connection);
@@ -75,7 +75,7 @@ class DebuggerPanel implements IBarPanel
      * Panel
      * @return string
      */
-    function getPanel() : string
+    function getPanel()
     {
         $connection = Propel::getConnection();
         $profile =  $this->getProfile($connection);
