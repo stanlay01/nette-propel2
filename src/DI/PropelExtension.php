@@ -20,7 +20,7 @@ class PropelExtension extends CompilerExtension
      * Nastartuje Propel
      * @param ClassType $class
      */
-    public function afterCompile(ClassType $class) : void
+    public function afterCompile(ClassType $class)
     {
         $initialize = $class->methods['initialize'];
         $initialize->addBody(\Wakers\Propel\Setup\PropelSetup::class . '::setup($this);');
